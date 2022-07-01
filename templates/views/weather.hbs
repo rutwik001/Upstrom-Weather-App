@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {{>headerLinks}}
+</head>
+<body>
+   {{>navbar}}
+
+    <!-- main-header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                     <div class="searchbar">
+                        <form class="form-inline search_content">
+                            <input class="form-control mr-sm-3" autoFocus type="text" id="cityName" placeholder="Enter City Name">
+                            <button class="btn btn-outline-success my-2 my-sm-5 " type="submit" id="searchBtn" value="search">Search</button>
+                        </form>
+                     </div>
+                    <div class="col-md-8 col-12 main_header_right">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title" id="City">Weather Condition</h5>
+                              <h6 class="card-subtitle mb-2" id="date"></h6>
+                              <h3 id="coordinates"></h3>
+                              <h3 id="temp">Wanna know ?? </h3>
+                               <h3 id="weather_icon"><br>Will it rain🌦️ or will be sunny☀️ <br><br><br>🤔🤔</h3>
+                              <h3 id="humidity"></h3>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 main_header_left">
+                        <p>When weather is hot keep a cold mind and when is cold keep a</p>
+                        <h1><i><span> Warm Heart</span></i></h1>
+                        <a href="/weather"><button><b>Know More</b></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="../public/js/main.js"></script>
+</body>
+</html>
